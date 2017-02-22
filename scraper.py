@@ -6,7 +6,7 @@ districts_url = "http://maps.wolverhampton.gov.uk/arcgis/rest/services/PollingDi
 council_id = 'E08000031'
 
 
-stations_scraper = ArcGisScraper(stations_url, council_id, 'utf-8', 'stations', store_raw_data=True)
+stations_scraper = ArcGisScraper(stations_url, council_id, 'utf-8', 'stations')
 stations_scraper.scrape()
 districts_scraper = ArcGisScraper(districts_url, council_id, 'utf-8', 'districts')
 districts_scraper.scrape()
